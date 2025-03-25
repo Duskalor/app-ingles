@@ -8022,7 +8022,7 @@ var phrases = [
 // src/index.ts
 var app = () => {
   import_node_cron.schedule('*/30 * * * * *', async () => {
-    console.log('enviando frase...ß');
+    console.log('enviando frase...');
     const phrase = getPhrase(phrases);
 
     const tense = phrase.tense.replace(/([A-Z])/g, ' $1').trim();
