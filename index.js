@@ -8021,7 +8021,7 @@ var phrases = [
 
 // src/index.ts
 var app = () => {
-  import_node_cron.schedule('*/30 * * * * *', async () => {
+  import_node_cron.schedule('*/30 * * * *', async () => {
     console.log('enviando frase...');
     const phrase = getPhrase(phrases);
 
@@ -8032,7 +8032,7 @@ var app = () => {
 
 `;
     await sendTelegram(message);
-    await wait(1e4);
+    await wait(3e2);
     await sendTelegram(`\uD83C\uDF0D Traducción :
  ${phrase.traduction}`);
   });
